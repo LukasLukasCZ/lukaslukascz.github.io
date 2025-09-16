@@ -1,9 +1,17 @@
+/* VLASTNÍ FONT */
+@font-face {
+  font-family: 'KHInterference';
+  src: url('fonts/KHInterferenceTRIAL-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Reset a základ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'KHInterference'; /* Používá custom font */
 }
 
 body {
