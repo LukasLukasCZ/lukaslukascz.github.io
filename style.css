@@ -22,21 +22,25 @@ header .container {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  align-items: center;  /* zarovnání logo + menu na střed */
+  align-items: center;   /* logo + navigace na střed */
   justify-content: space-between;
 }
 
 .logo img {
-  height: 55px;     /* zvětšené logo */
+  height: 55px;   /* zvětšené logo */
   width: auto;
   display: block;
+}
+
+nav {
+  display: flex;
+  align-items: center;   /* zarovná odkazy na střed vůči logu */
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  align-items: center; /* zarovná menu vertikálně na střed */
 }
 
 nav ul li a {
@@ -44,7 +48,6 @@ nav ul li a {
   color: white;
   font-weight: 500;
 }
-
 
 .btn-discord {
   background: #5865F2;
