@@ -1,10 +1,11 @@
 /* VLASTNÍ FONT */
 @font-face {
   font-family: 'KHInterference';
-  src: url('fonts/KHInterferenceTRIAL-Regular.otf') format('opentype');
+  src: url('KHInterferenceTRIAL-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+
 
 /* Reset a základ */
 * {
