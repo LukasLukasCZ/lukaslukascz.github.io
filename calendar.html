@@ -1,173 +1,64 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 Esport Liga 2025 - Kalendář</title>
-    <style>
-        /* Reset a základní styly */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #2b2b2b;
-            color: #fff;
-        }
-
-        /* HLAVIČKA */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-        }
-
-        header .logo img {
-            width: 100px;
-        }
-
-        header nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        header nav li {
-            margin-left: 20px;
-        }
-
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        header nav a.active {
-            color: #ff6600;
-        }
-
-        /* Kalendář */
-        .calendar-header {
-            background-color: #cc0000;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 40px auto 20px auto;
-            max-width: 800px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        .calendar-header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-
-        .calendar-subtitle {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #cccccc;
-        }
-
-        .calendar-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            justify-items: center;
-            max-width: 1000px;
-            margin: 0 auto 60px auto;
-        }
-
-        .race {
-            width: 220px;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .race span {
-            display: block;
-            margin-top: 10px;
-            font-size: 0.9rem;
-            color: #eeeeee;
-        }
-
-        .race:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-        }
-
-        /* Barvy závodů */
-        .race.red { background: linear-gradient(120deg, #ff0000, #cc0000); }
-        .race.orange { background: linear-gradient(120deg, #ff6600, #ff9900); }
-        .race.green { background: linear-gradient(120deg, #00cc44, #009966); }
-        .race.blue { background: linear-gradient(120deg, #0099ff, #3366ff); }
-
-        /* Footer */
-        footer {
-            padding: 20px;
-            text-align: center;
-            background-color: #1e1e1e;
-            color: #777777;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRO RACING SERIES</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+  <!-- HLAVIČKA -->
+  <header>
     <div class="container">
-        <div class="logo">
-            <img src="prs33.png" alt="PRS Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Domů</a></li>
-                <li><a href="calendar.html" class="active">Kalendář</a></li>
-                <li><a href="#">Jezdci</a></li>
-                <li><a href="#">Týmy</a></li>
-                <li><a href="#">Výsledky</a></li>
-                <li><a href="https://forms.gle/3hUafDq7zYWbRinV6">Přihlášení</a></li>
-                <li><a href="https://discord.gg/pMJdcycVun" class="btn-discord">Discord</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="prs33.png" alt="PRS Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="#">Kalendář</a></li>
+          <li><a href="#">Jezdci</a></li>
+          <li><a href="#">Týmy</a></li>
+          <li><a href="#">Výsledky</a></li>
+          <li><a href="https://forms.gle/3hUafDq7zYWbRinV6">Přihlášení</a></li>
+          <li><a href="https://discord.gg/pMJdcycVun" class="btn-discord">Discord</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
-<main>
-    <div class="calendar-header">
-        <h1>Kalendář 2. sezóny</h1>
+  <!-- HERO SEKCE -->
+  <section class="hero">
+    <div class="overlay">
+      <h1 style="font-family: 'KHInterference-Bold', sans-serif;">KALENDÁŘ</h1>
+      <p style="font-family: 'KHInterference-Light', sans-serif;">Druhá sezóna F1 PRS ligy právě začíná! Připoj se k naší virtuální motorsportové soutěži.</p>
+      <a href="https://discord.gg/pMJdcycVun" class="btn-primary font-bold">Připojit se na Discord</a>
     </div>
-    <p class="calendar-subtitle">Prohlédněte si aktuální okruhy pro 2. sezónu</p>
+  </section>
 
-    <div class="calendar-grid">
-        <div class="race red">Okruh Alfa<br><span>1.1.2025</span></div>
-        <div class="race red">Okruh Beta<br><span>8.1.2025</span></div>
-        <div class="race red">Okruh Gamma<br><span>15.1.2025</span></div>
+  <!-- INFO SEKCE -->
+  <section class="info">
+    <h2>SEZÓNA 2 - DŮLEŽITÉ INFORMACE</h2>
+    <p style="font-family: 'KHInterference-Light', sans-serif;">Druhá sezóna F1 PRS ligy přináší nové okruhy a ještě více napětí!</p>
 
-        <div class="race orange">Okruh Delta<br><span>22.1.2025</span></div>
-        <div class="race orange">Okruh Epsilon<br><span>29.1.2025</span></div>
-        <div class="race orange">Okruh Zeta<br><span>5.2.2025</span></div>
-        <div class="race orange">Okruh Eta<br><span>12.2.2025</span></div>
-
-        <div class="race green">Okruh Theta<br><span>19.2.2025</span></div>
-        <div class="race green">Okruh Iota<br><span>26.2.2025</span></div>
-        <div class="race green">Okruh Kappa<br><span>5.3.2025</span></div>
-
-        <div class="race blue">Okruh Lambda<br><span>12.3.2025</span></div>
-        <div class="race blue">Okruh Mu<br><span>19.3.2025</span></div>
+    <div class="info-boxes">
+      <div class="box">
+        <h3 style="font-family: 'KHInterference-Regular', sans-serif;">📅 Formát</h3>
+        <p style="font-family: 'KHInterference-Light', sans-serif;">12 závodů 
+          2 části sezóny 
+          Klasický šampionát</p>
+      </div>
+      <div class="box">
+        <h3 style="font-family: 'KHInterference-Regular', sans-serif;">🏆 Bodování</h3>
+        <p style="font-family: 'KHInterference-Light', sans-serif;">25-18-15-12-10-8-6-4-2-1</p>
+      </div>
+      <div class="box">
+        <h3 style="font-family: 'KHInterference-Regular', sans-serif;">🎮 Platforma</h3>
+        <p style="font-family: 'KHInterference-Light', sans-serif;">F1 2025 (PC/PS5/Xbox)</p>
+      </div>
     </div>
-</main>
-
-<footer>
-    <p>© 2025 PRO RACING SERIES</p>
-</footer>
+  </section>
 
 </body>
 </html>
