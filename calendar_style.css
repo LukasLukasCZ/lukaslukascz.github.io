@@ -191,23 +191,23 @@ nav ul li a {
 }
 
 .race-card {
+  background-size: cover;
+  background-position: center;
   border-radius: 15px;
-  height: 180px; /* výška obdélníku */
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
   border: 1px solid #333;
   transition: transform 0.2s, filter 0.3s;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  color: #fff; /* text bílý kvůli obrázku */
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  filter: brightness(0.75); /* 25 % tmavší */
 }
 
 .race-card:hover {
   transform: translateY(-5px);
-  filter: brightness(1.1);
+  filter: brightness(1); /* zesvětlení při hover */
 }
 
 .race-card .inner {
@@ -224,7 +224,6 @@ nav ul li a {
   font-family: 'KHInterference-Light', sans-serif;
   font-size: 14px;
 }
-
 
 /* Responzivita */
 @media (max-width: 900px) {
