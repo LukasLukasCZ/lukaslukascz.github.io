@@ -1,103 +1,172 @@
+/* Font 1 */
+@font-face {
+    font-family: 'KHInterference-Regular';
+    src: url('KHInterferenceTRIAL-Regular.otf') format('opentype');
+}
+
+/* Font 2 */
+@font-face {
+    font-family: 'KHInterference-Light';
+    src: url('KHInterferenceTRIAL-Light.otf') format('opentype');
+}
+
+/* Font 3 */
+@font-face {
+    font-family: 'KHInterference-Bold';
+    src: url('KHInterferenceTRIAL-Bold.otf') format('opentype');
+}
+
+/* Reset a základ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'KHInterference-Regular', sans-serif; /* defaultně Regular */
+}
+
+/* --- Třídy pro manuální přepínání fontů --- */
+.font-regular {
+  font-family: 'KHInterference-Regular', sans-serif;
+}
+
+.font-light {
+  font-family: 'KHInterference-Light', sans-serif;
+}
+
+.font-bold {
+  font-family: 'KHInterference-Bold', sans-serif;
+}
+
 body {
-    background-color: ##1e1e1e;
-    color: #fff;
+  background-color: #111;
+  color: #fff;
 }
 
 /* HLAVIČKA */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: ##aa0000;
+  background: linear-gradient(to right, #600, #900);
+  padding: 10px 0;
+  font-family: 'KHInterference-Regular', sans-serif; /* Regular pro celou hlavičku */
 }
 
-header .logo img {
-    width: 100px;
+header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;   /* logo + navigace na střed */
+  justify-content: space-between;
 }
 
-header nav ul {
-    display: flex;
-    list-style: none;
+.logo img {
+  height: 65px;   /* zvětšené logo */
+  width: auto;
+  display: block;
 }
 
-header nav li {
-    margin-left: 20px;
+nav {
+  display: flex;
+  align-items: center;   /* zarovná odkazy na střed vůči logu */
 }
 
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-header nav a.active {
-    color: #ff6600;
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-family: 'KHInterference-Light', sans-serif; /* Light pro odkazy */
 }
 
-/* Kalendář */
-.calendar-header {
-    background-color: ##aa0000;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 40px auto 20px auto;
-    max-width: 800px;
+.btn-discord {
+  background: #5865F2;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+  font-family: 'KHInterference-Regular', sans-serif;
 }
 
-.calendar-header h1 {
-    margin: 0;
-    font-size: 2rem;
+.btn-discord:hover {
+  background: #4752c4;
 }
 
-.calendar-subtitle {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #cccccc;
+/* HERO SEKCE */
+.hero {
+  height: 80vh;
+  background: url('https://img.playstationtrophies.org/images/monthly_2025_04/screenshots/32619/f125_vis_firstlook-thumbnail.3.1-16x91_9a1c3aa7-7e9b-4a36-a4c1-e507d77de71f.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    max-width: 1000px;
-    margin: 0 auto 60px auto;
+.hero .overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 10px;
 }
 
-.race {
-    width: 220px;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-weight: bold;
-    font-size: 1.1rem;
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
 }
 
-.race span {
-    display: block;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #eeeeee;
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.race:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+.btn-primary {
+  background: #c00;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  font-family: 'KHInterference-Bold', sans-serif;
 }
 
-/* Barvy závodů */
-.race.red { background: linear-gradient(120deg, #ff0000, #cc0000); }
-.race.orange { background: linear-gradient(120deg, #ff6600, #ff9900); }
-.race.green { background: linear-gradient(120deg, #00cc44, #009966); }
-.race.blue { background: linear-gradient(120deg, #0099ff, #3366ff); }
+.btn-primary:hover {
+  background: #a00;
+}
 
-/* Footer */
-footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #1e1e1e;
-    color: #777777;
+/* INFO SEKCE */
+.info {
+  text-align: center;
+  padding: 50px 20px;
+  background: #1a1a1a;
+}
+
+.info h2 {
+  color: #e00;
+  margin-bottom: 15px;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  border: 1px solid #333;
+}
+
+.box h3 {
+  margin-bottom: 10px;
+  color: #fff;
 }
