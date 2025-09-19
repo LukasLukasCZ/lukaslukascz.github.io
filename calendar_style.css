@@ -1,0 +1,96 @@
+/* Reset a základní styly */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header nav a.active {
+    color: #ff6600;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+/* Grid kalendáře */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.race {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.race:hover {
+    transform: translateY(-5px);
+}
+
+.race-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.race-date {
+    font-size: 1rem;
+    color: #dddddd;
+}
+
+/* Barvy dle týmu (inspirace obrázkem) */
+.orange { background: linear-gradient(120deg, #ff9900, #ff6600); }
+.red { background: linear-gradient(120deg, #cc0000, #ff0000); }
+.green { background: linear-gradient(120deg, #009966, #00cc44); }
+.blue { background: linear-gradient(120deg, #3366ff, #0099ff); }
+.purple { background: linear-gradient(120deg, #9933cc, #cc66ff); }
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #777777;
+}
