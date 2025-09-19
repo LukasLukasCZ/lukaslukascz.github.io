@@ -24,7 +24,7 @@
   font-family: 'KHInterference-Regular', sans-serif; /* defaultně Regular */
 }
 
-/* --- NOVÉ TŘÍDY NA PŘEPÍNÁNÍ FONTŮ --- */
+/* --- Třídy pro manuální přepínání fontů --- */
 .font-regular {
   font-family: 'KHInterference-Regular', sans-serif;
 }
@@ -37,7 +37,51 @@
   font-family: 'KHInterference-Bold', sans-serif;
 }
 
-/* --- TLAČÍTKA --- */
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+/* HLAVIČKA */
+header {
+  background: linear-gradient(to right, #600, #900);
+  padding: 10px 0;
+  font-family: 'KHInterference-Regular', sans-serif; /* Regular pro celou hlavičku */
+}
+
+header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;   /* logo + navigace na střed */
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 65px;   /* zvětšené logo */
+  width: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  align-items: center;   /* zarovná odkazy na střed vůči logu */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-family: 'KHInterference-Light', sans-serif; /* Light pro odkazy */
+}
+
 .btn-discord {
   background: #5865F2;
   color: white;
@@ -45,11 +89,38 @@
   border-radius: 6px;
   font-weight: bold;
   transition: background 0.3s;
-  font-family: 'KHInterference-Regular', sans-serif; /* základní font */
+  font-family: 'KHInterference-Regular', sans-serif;
 }
 
 .btn-discord:hover {
   background: #4752c4;
+}
+
+/* HERO SEKCE */
+.hero {
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .btn-primary {
@@ -60,9 +131,42 @@
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s;
-  font-family: 'KHInterference-Bold', sans-serif; /* základně Bold */
+  font-family: 'KHInterference-Bold', sans-serif;
 }
 
 .btn-primary:hover {
   background: #a00;
+}
+
+/* INFO SEKCE */
+.info {
+  text-align: center;
+  padding: 50px 20px;
+  background: #1a1a1a;
+}
+
+.info h2 {
+  color: #e00;
+  margin-bottom: 15px;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  border: 1px solid #333;
+}
+
+.box h3 {
+  margin-bottom: 10px;
+  color: #fff;
 }
