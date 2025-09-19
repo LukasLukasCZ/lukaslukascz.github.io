@@ -170,3 +170,54 @@ nav ul li a {
   margin-bottom: 10px;
   color: #fff;
 }
+/* KALENDÁŘ SEKCE */
+.calendar {
+  text-align: center;
+  padding: 50px 20px;
+  background: #111;
+}
+
+.calendar h2 {
+  color: #e00;
+  margin-bottom: 30px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 vedle sebe */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.race-card {
+  background: #222;
+  border-radius: 15px;
+  height: 180px; /* výška obdélníku */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'KHInterference-Bold', sans-serif;
+  font-size: 20px;
+  border: 1px solid #333;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.race-card:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+/* Responzivita */
+@media (max-width: 900px) {
+  .calendar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .calendar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
