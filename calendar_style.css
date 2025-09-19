@@ -1,5 +1,5 @@
 body {
-    background-color: #2b2b2b;
+    background-color: ##1e1e1e;
     color: #fff;
 }
 
@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: ##aa0000;
 }
 
 header .logo img {
@@ -37,7 +37,7 @@ header nav a.active {
 
 /* Kalendář */
 .calendar-header {
-    background-color: #cc0000;
+    background-color: ##aa0000;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
