@@ -80,12 +80,13 @@ nav ul li a {
 /* HERO SEKCE */
 .hero {
   height: 80vh;
-  background: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/04/f1-25-decal-reveal-deep-dive.jpg') no-repeat center center/cover;
+  background: url('austria.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
+}
 }
 .hero .overlay {
   background: rgba(0,0,0,0.6);
