@@ -80,7 +80,7 @@ nav ul li a {
 /* HERO SEKCE */
 .hero {
   height: 80vh;
-  background: url('austria.jpg') no-repeat center center/cover;
+  background: url('https://pbs.twimg.com/media/GvBgaYqW4AAPcU0.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
