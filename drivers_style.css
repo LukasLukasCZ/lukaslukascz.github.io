@@ -128,7 +128,7 @@ nav ul li a {
   background-size: cover;
   background-position: center;
   border-radius: 15px;
-  height: 220px; /* zvětšeno z 180px */
+  height: 360px; /* zvětšeno z 180px */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,12 +145,12 @@ nav ul li a {
 .race-card .inner { text-align: center; }
 .race-card .title {
   font-family: 'KHInterference-Bold', sans-serif;
-  font-size: 26px; /* zvětšeno z 22px */
+  font-size: 44px; /* zvětšeno z 22px */
   margin-bottom: 6px;
 }
 .race-card .subtitle {
   font-family: 'KHInterference-Light', sans-serif;
-  font-size: 16px; /* zvětšeno z 14px */
+  font-size: 28px; /* zvětšeno z 14px */
 }
 
 /* Responzivita */
