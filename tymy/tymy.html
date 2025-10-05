@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="cs"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRL - Velocity Racing League - Season 2</title>
+    <link rel="stylesheet" href="tymy_soubory/all.min.css">
+    <link rel="stylesheet" href="tymy_soubory/style.css">
+</head>
+
+<body data-theme="dark">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="tymy_soubory/vrl_high_res.png" alt="F1 VRL Logo" class="logo-img">
+                </div>
+                <div class="header-controls">
+                    <button class="theme-switch" id="themeSwitch">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <nav id="mobileNav">
+                    <ul>
+                        <li><a href="https://www.vrltv.eu/index.html">Domů</a></li>
+                        <li><a href="https://www.vrltv.eu/calendar.html">Kalendář</a></li>
+                        <li><a href="https://www.vrltv.eu/jezdci.html">Jezdci</a></li>
+                        <li><a href="https://www.vrltv.eu/tymy.html">Týmy</a></li>
+                        <li><a href="https://www.vrltv.eu/okruh.html">Okruhy</a></li>
+                        <li><a href="https://www.vrltv.eu/vysledky.html">Výsledky</a></li>
+                        <li><a href="https://www.vrltv.eu/prihlasky.html">Příhlášky</a></li>
+                        <li><a href="https://discord.gg/CMxscEUcRd" class="discord-btn"><i class="fab fa-discord"></i>
+                                Discord</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(&quot;F1_25_photo_20250901_181850.png&quot;);">
+        <div class="hero-fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(&quot;F1_25_photo_20250916_180838.png&quot;); opacity: 1;"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Velocity Racing League</h2>
+                <p>Zjisti jak na tom jsou tvoje oblíbené týmy.</p>
+                <div>
+                    <a href="https://discord.gg/CMxscEUcRd" class="btn"><i class="fab fa-discord"></i> Připojit se na
+                        Discord</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="table-title">Pořadí týmy</h2>
+        <table class="drivers-table">
+            <thead>
+                <tr>
+                    <th>Pořadí</th>
+                    <th>Tým</th>
+                    <th>Body</th>
+                    <th>Ztráta</th>
+                    <th>1. místa</th>
+                    <th>2. místa</th>
+                    <th>3. místa</th>
+                </tr>
+            </thead>
+            <tbody id="driversTable"><tr>
+            <td><strong>1</strong></td>
+            <td class="team-cell" data-drivers="Maxim Heligr, Matěj Vaculík">McLaren</td>
+            <td><strong>88</strong></td>
+            <td>-</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+        </tr><tr>
+            <td><strong>2</strong></td>
+            <td class="team-cell" data-drivers="Josef Kubeš, Luboš Novotný">Ferrari</td>
+            <td><strong>59</strong></td>
+            <td>29</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr><tr>
+            <td><strong>3</strong></td>
+            <td class="team-cell" data-drivers="Zdeněk Pohlreich, Martin Klaboch">Mercedes</td>
+            <td><strong>56</strong></td>
+            <td>32</td>
+            <td>0</td>
+            <td>3</td>
+            <td>0</td>
+        </tr><tr>
+            <td><strong>4</strong></td>
+            <td class="team-cell" data-drivers="Filip Kratochvil, Oliver Maťko">Aston Martin</td>
+            <td><strong>30</strong></td>
+            <td>58</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr><tr>
+            <td><strong>5</strong></td>
+            <td class="team-cell" data-drivers="Matěj Csiba, Matyáš Kasl">Williams</td>
+            <td><strong>27</strong></td>
+            <td>61</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr><tr>
+            <td><strong>6</strong></td>
+            <td class="team-cell" data-drivers="Tomáš Novák, Matěj Švec">Haas</td>
+            <td><strong>20</strong></td>
+            <td>68</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr><tr>
+            <td><strong>7</strong></td>
+            <td class="team-cell" data-drivers="Andrej Erdelský, Alex Výplach">Racing Bulls</td>
+            <td><strong>10</strong></td>
+            <td>78</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr><tr>
+            <td><strong>8</strong></td>
+            <td class="team-cell" data-drivers="Petr Stouhal, Tadeáš Šmídl">Red Bull</td>
+            <td><strong>6</strong></td>
+            <td>82</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr><tr>
+            <td><strong>9</strong></td>
+            <td class="team-cell" data-drivers="Jakub Fabian, Oliver Stavač">Sauber</td>
+            <td><strong>6</strong></td>
+            <td>82</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr><tr>
+            <td><strong>10</strong></td>
+            <td class="team-cell" data-drivers="Matěj Doha, Jan Vlach">Alpine</td>
+            <td><strong>1</strong></td>
+            <td>87</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VRL</h3>
+                    <p>Virtuální závodní liga pro nadšence Formule 1. Připoj se k nám a zažij motorsport z pohodlí
+                        domova.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/vrl_velocityracingleague/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@Velocity_Racing_League_VRL"><i class="fab fa-youtube"></i></a>
+                        <a href="https://discord.gg/CMxscEUcRd"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.tiktok.com/@velocity_racingleague" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigace</h3>
+                    <ul>
+                        <li><a href="https://www.vrltv.eu/index.html">Domů</a></li>
+                        <li><a href="https://www.vrltv.eu/calendar.html">Kalendář</a></li>
+                        <li><a href="https://www.vrltv.eu/jezdci.html">Jezdci</a></li>
+                        <li><a href="https://www.vrltv.eu/tymy.html">Týmy</a></li>
+                        <li><a href="https://www.vrltv.eu/okruh.html">Okruhy</a></li>
+                        <li><a href="https://www.vrltv.eu/vysledky.html">Výsledky</a></li>
+                        <li><a href="https://www.vrltv.eu/prihlasky.html">Příhlášky</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Organizátoři</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/matyaasko/">Matěj Vaculík</a></li>
+                        <li><a href="https://www.instagram.com/beeeeuuuuu/">Maxim Heligr</a></li>
+                        <li><a href="https://www.instagram.com/_.duda.o._/">Ondra Duda</a></li>
+                        <li><a href="https://www.instagram.com/klabochmartin?igsh=Ym1pN29hNTFmbjBx&amp;utm_source=qr">Martin
+                                Klaboch</a></li>
+                        <li><a href="https://www.instagram.com/olinkkt/">Oliver Seidl</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 VRL. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="tymy_soubory/global.js"></script>
+    <script>
+        const drivers = [
+            { number: 71, name: "Petr Stouhal", team: "Red Bull", country: "cz", points: 0, wins: 0, second: 0, third: 0 },
+            { number: 7, name: "Josef Kubeš", team: "Ferrari", country: "cz", points: 55, wins: 1, second: 0, third: 0 },
+            { number: 2, name: "Zdeněk Pohlreich", team: "Mercedes", country: "cz", points: 2, wins: 0, second: 0, third: 0 },
+            { number: 1, name: "Maxim Heligr", team: "McLaren", country: "cz", points: 65, wins: 2, second: 0, third: 1 },
+            { number: 56, name: "Filip Kratochvil", team: "Aston Martin", country: "cz", points: 8, wins: 0, second: 0, third: 0 },
+            { number: 24, name: "Matěj Doha", team: "Alpine", country: "cz", points: 1, wins: 0, second: 0, third: 0 },
+            { number: 97, name: "Andrej Erdelský", team: "Racing Bulls", country: "sk", points: 10, wins: 0, second: 0, third: 0 },
+            { number: 20, name: "Tomáš Novák", team: "Haas", country: "cz", points: 20, wins: 0, second: 0, third: 0 },
+            { number: 33, name: "Matěj Csiba", team: "Williams", country: "sk", points: 12, wins: 0, second: 0, third: 0 },
+            { number: 99, name: "Jakub Fabian", team: "Sauber", country: "cz", points: 2, wins: 0, second: 0, third: 0 },
+
+            { number: 13, name: "Tadeáš Šmídl", team: "Red Bull", country: "cz", points: 6, wins: 0, second: 0, third: 0 },
+            { number: 28, name: "Luboš Novotný", team: "Ferrari", country: "cz", points: 4, wins: 0, second: 0, third: 0 },
+            { number: 12, name: "Martin Klaboch", team: "Mercedes", country: "cz", points: 54, wins: 0, second: 3, third: 0 },
+            { number: 96, name: "Matěj Vaculík", team: "McLaren", country: "cz", points: 23, wins: 0, second: 0, third: 1 },
+            { number: 3, name: "Oliver Maťko", team: "Aston Martin", country: "sk", points: 22, wins: 0, second: 0, third: 0 },
+            { number: 6, name: "Jan Vlach", team: "Alpine", country: "cz", points: 0, wins: 0, second: 0, third: 0 },
+            { number: 67, name: "Alex Výplach", team: "Racing Bulls", country: "cz", points: 0, wins: 0, second: 0, third: 0 },
+            { number: 25, name: "Matěj Švec", team: "Haas", country: "cz", points: 0, wins: 0, second: 0, third: 0 },
+            { number: 26, name: "Matyáš Kasl", team: "Williams", country: "cz", points: 15, wins: 0, second: 0, third: 1 },
+            { number: 66, name: "Oliver Stavač", team: "Sauber", country: "sk", points: 4, wins: 0, second: 0, third: 0 }
+        ];
+
+        // seskupení podle týmů
+        const teams = {};
+        drivers.forEach(driver => {
+            if (!teams[driver.team]) teams[driver.team] = { points: 0, wins: 0, second: 0, third: 0, drivers: [] };
+            teams[driver.team].points += driver.points;
+            teams[driver.team].wins += driver.wins;
+            teams[driver.team].second += driver.second;
+            teams[driver.team].third += driver.third;
+            teams[driver.team].drivers.push(driver.name);
+        });
+
+        // převod na pole a seřazení podle bodů
+        const sortedTeams = Object.entries(teams)
+            .map(([team, stats]) => ({ team, ...stats }))
+            .sort((a, b) => b.points - a.points);
+
+        // nejvíc bodů = lídr
+        const leaderPoints = sortedTeams[0].points;
+
+        const table = document.getElementById("driversTable");
+        sortedTeams.forEach((team, index) => {
+            const loss = leaderPoints - team.points; // ztráta na lídra
+            const row = document.createElement("tr");
+            row.innerHTML = `
+            <td><strong>${index + 1}</strong></td>
+            <td class="team-cell" data-drivers="${team.drivers.join(', ')}">${team.team}</td>
+            <td><strong>${team.points}</strong></td>
+            <td>${loss === 0 ? "-" : loss}</td>
+            <td>${team.wins}</td>
+            <td>${team.second}</td>
+            <td>${team.third}</td>
+        `;
+            table.appendChild(row);
+        });
+
+        // tooltip pro jezdce v týmu
+        const tooltip = document.createElement('div');
+        tooltip.style.position = 'absolute';
+        tooltip.style.background = 'rgba(0,0,0,0.8)';
+        tooltip.style.color = '#fff';
+        tooltip.style.padding = '5px 10px';
+        tooltip.style.borderRadius = '5px';
+        tooltip.style.display = 'none';
+        tooltip.style.zIndex = '1000';
+        document.body.appendChild(tooltip);
+
+        document.querySelectorAll('.team-cell').forEach(cell => {
+            cell.addEventListener('mouseenter', e => {
+                tooltip.textContent = 'Jezdci: ' + cell.dataset.drivers;
+                tooltip.style.display = 'block';
+            });
+            cell.addEventListener('mousemove', e => {
+                tooltip.style.top = e.pageY + 10 + 'px';
+                tooltip.style.left = e.pageX + 10 + 'px';
+            });
+            cell.addEventListener('mouseleave', () => {
+                tooltip.style.display = 'none';
+            });
+        });
+    </script><div style="position: absolute; background: rgba(0, 0, 0, 0.8); color: rgb(255, 255, 255); padding: 5px 10px; border-radius: 5px; display: none; z-index: 1000;"></div>
+
+
+
+
+</body></html>
